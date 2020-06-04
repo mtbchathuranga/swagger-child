@@ -1,0 +1,52 @@
+== Result
+
+result of requests and response
+
+=== Retrieve all Request
+
+==== Save car
+
+Just call `POST` on the `link:#_savecarusingpost[/save car]` resource.It will return link:#_car_entity[Car].
+
+[source,json]
+----
+ {
+    "id": null,
+    "name": "Sample car name",
+    "brand": "Sample brand name"
+ }
+
+----
+
+=== Retrieve all Response
+
+==== Get all cars
+
+Just call `GET` on the `link:#_getcarsusingget[/cars]` resource.It will return link:#_car_entity[Car].
+
+[source,json]
+----
+  [
+    {
+        "id": "1111",
+        "name": "Corolla",
+        "brand": "Toyota"
+    }
+  ]
+----
+
+==== Car
+
+It will return link:#_car_entity[Car].
+
+[source,json]
+----
+  {
+      "id": "1111",
+      "name": "Corolla",
+      "brand": "Toyota"
+  }
+
+----
+
+As you can see, you can also link to the generated documentation.
